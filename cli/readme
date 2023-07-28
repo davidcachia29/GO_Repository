@@ -1,0 +1,17 @@
+This readme will explain the basics of how to create a cli that will run basic commands in Go
+
+The first step is to create a folder cli
+This will contain the code to run
+
+Create a file main.go
+
+Add the imports and a main function
+
+Initialise the project using 'go mod init -ProjectName-
+This will create a go.mod that is like a package.json
+
+To create an exe of the main.go use the command :
+go build main.go
+
+To execute use the following :
+./main.exe start -v

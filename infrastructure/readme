@@ -1,0 +1,10 @@
+In the infrastructure folder the api is created with endpoints and with integration of swagger.
+This api is using the clean architecture
+
+# Clean architecture
+
+The clean architecture uses the layers Controller > usecase > entity
+The idea is that comunication is only done from the outerlayers to inner and the inner layers do not communicate with the other layer.
+
+1. In this project when the api recieves a call it entered in the controller
+2. The data is then sent to the usercase where the
