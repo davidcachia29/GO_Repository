@@ -28,6 +28,7 @@ func main() {
 
 	app.Get("/swagger/*", swagger.HandlerDefault)
 
+	//implementation of metrics endpoint below
 	app.Get("/metrics", monitor.New())
 
 	println("Starting server on port 8080")
