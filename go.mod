@@ -41,5 +41,6 @@ require (
 	golang.org/x/tools v0.11.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
+	gorm.io/gorm v1.25.2
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
