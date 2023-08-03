@@ -5,18 +5,18 @@ definitions:
       text:
         type: string
     type: object
-host: localhost:8080
+host: 127.0.0.1:8080
 info:
   contact: {}
   description: This is a sample server for using swagger with fiber.
   title: Swagger Example API
   version: "1.0"
 paths:
-  /messages:
+  /path:
     get:
       consumes:
       - application/json
-      description: Fetches all messages. You can add more details here.
+      description: Displayes the call that is made
       produces:
       - application/json
       responses:
@@ -26,7 +26,7 @@ paths:
             items:
               $ref: '#/definitions/entity.Message'
             type: array
-      summary: Get messages
+      summary: Get Call
       tags:
       - messages
 swagger: "2.0"

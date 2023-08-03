@@ -16,9 +16,9 @@ const docTemplate = `{
     "host": "{{.Host}}",
     "basePath": "{{.BasePath}}",
     "paths": {
-        "/messages": {
+        "/path": {
             "get": {
-                "description": "Fetches all messages. You can add more details here.",
+                "description": "Displayes the call that is made",
                 "consumes": [
                     "application/json"
                 ],
@@ -28,7 +28,7 @@ const docTemplate = `{
                 "tags": [
                     "messages"
                 ],
-                "summary": "Get messages",
+                "summary": "Get Call",
                 "responses": {
                     "200": {
                         "description": "OK",
@@ -58,7 +58,7 @@ const docTemplate = `{
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
 	Version:          "1.0",
-	Host:             "localhost:8080",
+	Host:             "127.0.0.1:8080",
 	BasePath:         "/",
 	Schemes:          []string{},
 	Title:            "Swagger Example API",

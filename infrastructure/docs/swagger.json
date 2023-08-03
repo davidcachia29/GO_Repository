@@ -6,12 +6,12 @@
         "contact": {},
         "version": "1.0"
     },
-    "host": "localhost:8080",
+    "host": "127.0.0.1:8080",
     "basePath": "/",
     "paths": {
-        "/messages": {
+        "/path": {
             "get": {
-                "description": "Fetches all messages. You can add more details here.",
+                "description": "Displayes the call that is made",
                 "consumes": [
                     "application/json"
                 ],
@@ -21,7 +21,7 @@
                 "tags": [
                     "messages"
                 ],
-                "summary": "Get messages",
+                "summary": "Get Call",
                 "responses": {
                     "200": {
                         "description": "OK",
